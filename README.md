@@ -1,7 +1,7 @@
 # SMS to Telegram Forwarder
 
-![CI](https://github.com/yourusername/sms-to-tg-forwarder/workflows/CI/badge.svg)
-[![codecov](https://codecov.io/gh/yourusername/sms-to-tg-forwarder/branch/main/graph/badge.svg)](https://codecov.io/gh/yourusername/sms-to-tg-forwarder)
+![CI](https://github.com/RuslanGaliullin/sms-to-telegram-forwarder/workflows/CI/badge.svg)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/RuslanGaliullin/sms-to-telegram-forwarder/ci.yml?branch=main)](https://github.com/RuslanGaliullin/sms-to-telegram-forwarder/actions)
 
 A React Native Android application that automatically forwards all incoming SMS messages to a specified Telegram bot. The app works in the background and uses a Headless JS task to ensure SMS are forwarded even when the app is closed.
 
@@ -18,7 +18,7 @@ A React Native Android application that automatically forwards all incoming SMS 
 
 - **Node.js** >= 20.x
 - **npm** >= 10.x
-- **Android Studio** or Android SDK (API 23+)
+- **Android Studio** or Android SDK (API 24+ / Android 7.0+)
 - **Java Development Kit** (JDK) 17
 - **Telegram Bot Token** ([Create bot via @BotFather](https://t.me/botfather))
 - **Telegram Chat ID** ([Get your chat ID](https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates))
