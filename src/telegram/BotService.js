@@ -1,14 +1,14 @@
 import axios from 'axios';
-import Config from 'react-native-config';
+import { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID } from '@env';
 
 /**
  * BotService - handles sending messages to Telegram bot
  * Uses Bot API to send formatted SMS messages
  */
 class BotService {
-  static BOT_TOKEN = Config.TELEGRAM_BOT_TOKEN;
+  static BOT_TOKEN = TELEGRAM_BOT_TOKEN;
 
-  static CHAT_ID = Config.TELEGRAM_CHAT_ID;
+  static CHAT_ID = TELEGRAM_CHAT_ID;
 
   static API_URL = `https://api.telegram.org/bot${BotService.BOT_TOKEN}/sendMessage`;
 

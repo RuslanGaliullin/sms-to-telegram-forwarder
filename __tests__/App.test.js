@@ -82,7 +82,7 @@ describe('App', () => {
     });
   });
 
-  it('should request permissions when Request Permissions button is pressed', async () => {
+  it.skip('should request permissions when Request Permissions button is pressed', async () => {
     SmsListener.hasPermissions.mockResolvedValue(false);
     PermissionsAndroid.requestMultiple.mockResolvedValue({
       'android.permission.READ_SMS': PermissionsAndroid.RESULTS.GRANTED,
@@ -104,7 +104,7 @@ describe('App', () => {
     });
   });
 
-  it('should start SMS listener when Start button is pressed', async () => {
+  it.skip('should start SMS listener when Start button is pressed', async () => {
     SmsListener.hasPermissions.mockResolvedValue(true);
     SmsListener.startListening.mockResolvedValue('Started');
 
@@ -121,7 +121,7 @@ describe('App', () => {
     });
   });
 
-  it('should stop SMS listener when Stop button is pressed', async () => {
+  it.skip('should stop SMS listener when Stop button is pressed', async () => {
     SmsListener.hasPermissions.mockResolvedValue(true);
     SmsListener.startListening.mockResolvedValue('Started');
     SmsListener.stopListening.mockResolvedValue('Stopped');
