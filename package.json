@@ -30,7 +30,7 @@
     "@react-native/typescript-config": "0.76.1",
     "@testing-library/jest-native": "^5.4.3",
     "@testing-library/react-native": "^12.7.2",
-    "babel-jest": "^29.7.0",
+    "babel-jest": "^30.2.0",
     "eslint": "^8.57.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.30.0",
