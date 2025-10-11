@@ -8,8 +8,6 @@ plugins {
 
 rootProject.name = 'SMSForwarding'
 
-apply from: file("../node_modules/@react-native/gradle-plugin/settings.gradle")
-
 extensions.configure(com.facebook.react.ReactSettingsExtension){ ex ->
     ex.autolinkLibrariesFromCommand()
 }
