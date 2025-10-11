@@ -1,11 +1,14 @@
+pluginManagement {
+    includeBuild("../node_modules/@react-native/gradle-plugin")
+}
+
 plugins {
     id("com.facebook.react.settings")
 }
 
 rootProject.name = 'SMSForwarding'
-apply from: file("../node_modules/@react-native/gradle-plugin/settings.gradle")
 
-includeBuild("../node_modules/@react-native/gradle-plugin")
+apply from: file("../node_modules/@react-native/gradle-plugin/settings.gradle")
 
 extensions.configure(com.facebook.react.ReactSettingsExtension){ ex ->
     ex.autolinkLibrariesFromCommand()
