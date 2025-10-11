@@ -52,9 +52,8 @@ function App() {
         PermissionsAndroid.PERMISSIONS.RECEIVE_SMS,
       ]);
 
-      const allGranted =
-        granted['android.permission.READ_SMS'] === PermissionsAndroid.RESULTS.GRANTED &&
-        granted['android.permission.RECEIVE_SMS'] === PermissionsAndroid.RESULTS.GRANTED;
+      const allGranted = granted['android.permission.READ_SMS'] === PermissionsAndroid.RESULTS.GRANTED
+        && granted['android.permission.RECEIVE_SMS'] === PermissionsAndroid.RESULTS.GRANTED;
 
       setHasPermissions(allGranted);
 
@@ -129,15 +128,24 @@ function App() {
         </View>
 
         <View style={styles.statusContainer}>
-          <View style={[styles.statusDot, isRunning ? styles.statusActive : styles.statusInactive]} />
+          <View
+            style={[
+              styles.statusDot,
+              isRunning ? styles.statusActive : styles.statusInactive,
+            ]}
+          />
           <Text style={styles.statusText}>
-            Status: {isRunning ? 'Running' : 'Stopped'}
+            Status:
+            {' '}
+            {isRunning ? 'Running' : 'Stopped'}
           </Text>
         </View>
 
         <View style={styles.permissionContainer}>
           <Text style={styles.permissionText}>
-            SMS Permissions: {hasPermissions ? '✅ Granted' : '❌ Not Granted'}
+            SMS Permissions:
+            {' '}
+            {hasPermissions ? '✅ Granted' : '❌ Not Granted'}
           </Text>
         </View>
 
@@ -283,4 +291,3 @@ const styles = StyleSheet.create({
 });
 
 export default App;
-

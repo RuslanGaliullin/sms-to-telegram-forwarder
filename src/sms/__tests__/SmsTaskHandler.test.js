@@ -68,4 +68,3 @@ describe('SmsTaskHandler', () => {
     expect(callArg).toContain('🕒 Time:');
   });
 });
-

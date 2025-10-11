@@ -12,4 +12,3 @@ AppRegistry.registerHeadlessTask('SmsTask', () => SmsTaskHandler);
 
 // Register the main application component
 AppRegistry.registerComponent(appName, () => App);
-

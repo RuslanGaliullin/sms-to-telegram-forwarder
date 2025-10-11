@@ -53,4 +53,3 @@ class SmsListener {
 }
 
 export default SmsListener;
-

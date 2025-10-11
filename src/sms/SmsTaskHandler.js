@@ -30,4 +30,3 @@ const SmsTaskHandler = async (taskData) => {
 };
 
 export default SmsTaskHandler;
-

@@ -13,6 +13,19 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'import/prefer-default-export': 'off',
     'no-use-before-define': ['error', { variables: false }],
+    'react/jsx-props-no-multi-spaces': 'off',
   },
+  overrides: [
+    {
+      files: ['**/__tests__/**/*.js', '**/*.test.js'],
+      env: {
+        jest: true,
+      },
+      rules: {
+        'react/jsx-props-no-multi-spaces': 'off',
+        'global-require': 'off',
+        'no-undef': 'off',
+      },
+    },
+  ],
 };
-
