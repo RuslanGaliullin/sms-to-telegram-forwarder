@@ -5,7 +5,7 @@ module.exports = {
     '<rootDir>/jest.setup.js',
   ],
   transformIgnorePatterns: [
-    'node_modules/(?!(react-native|@react-native|react-native-config|react-native-permissions|react-native-background-fetch|axios)/)',
+    'node_modules/(?!(react-native|@react-native|axios)/)',
   ],
   collectCoverageFrom: [
     'src/**/*.{js,jsx}',
